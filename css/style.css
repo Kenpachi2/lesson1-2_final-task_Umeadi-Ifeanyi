@@ -1,52 +1,145 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	vertical-align: baseline;
+* {
+    margin: 0;
 }
 
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+body{
+   display: flex;
+   flex-direction: column;
+   height: 100vh; 
+
 }
 
-body {
-	line-height: 1;
+.header{
+    display: flex;
+    padding: 20px 30px;
+    align-items: center;
+    justify-content: right;
+    
 }
 
-ol, ul {
-	list-style: none;
+.header a{
+    margin-right: 15px;
+    margin-left: 15px;
+    color:black;
+    font-size: 15px;
+    text-decoration: inherit;
 }
 
-blockquote, q {
-	quotes: none;
+body .languages a {
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: small;
+  }
+
+  footer .foot-list a {
+    text-decoration: none;
+    color: #70757a;
+  }
+
+.header a:hover{
+    text-decoration: underline;
+
 }
 
-blockquote::before, blockquote::after,
-q::before, q::after {
-	content: '';
-	content: none;
+.mainbody{
+    object-fit: contain;
+    height: 100px;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 40px;
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+} 
+
+.search{
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    height: 30px;
+    padding: 10px 20px;
+    width: 75vw;
+    margin: 0 auto;
+    margin-top: 40px;
+    max-width: 560px;
 }
 
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+body .search-bar input {
+    flex: 1;
+    border: none;
+    height: 40px;
+    outline: none;
 }
 
-/* Do not write a css rule above here! Use the space below  */
+body .search-bar{
+  padding-top: 20px;
+}
+  
+.search-input span#camera{
+  padding: 10px;
+}
 
+.search-input span{
+  padding-left: 10px;
+  color: gray;
+  cursor: pointer;
+}
 
-/* Write your css below here */
+.search-input{
+    display: flex;
+    border: 1px solid gray;
+    height: 50px;
+    width: 600px;
+    align-items: center;
+    border-radius: 40px;
+  }
+
+   body .search-input:hover {
+    box-shadow: 0 0 20px black;
+  }
+ 
+  body .search-text {
+    margin: 40px;
+    margin-left: 165px;
+    align-content: center;
+  }
+
+  body .search-text button{
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+
+  body .search-text button:hover{
+    box-shadow: 0 0 10px black;
+  }
+
+  footer .foot-list a:hover {
+    text-decoration: underline;
+  }
+  
+  body .languages a:hover {
+    text-decoration: underline;
+  }
+
+footer {
+    margin-top: 198px;
+    background: #cfcccc;
+  }
+
+  footer p {
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+    color: #70757a;
+  }
+
+  footer .foot-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+  }
+
+  footer .foot-list .left a,
+  footer .foot-list .right a {
+    margin-right: 8px;
+  }
